@@ -1,6 +1,2 @@
 # Ignore credentials
 config/credentials.env
-
-etl/extract.py
-etl/load.py 
-etl/transform.py
