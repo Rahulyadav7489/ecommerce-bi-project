@@ -1,7 +1,12 @@
 from pymongo import MongoClient
 
     # Replace with your actual connection string
-MONGO_URI = "mongodb+srv://myself28072004:Yadavji28072004@cluster0.2vo3mcw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
+from dotenv import load_dotenv
+import os
+
+load_dotenv('../config/credentials.env')
+
+MONGO_URI = os.getenv("MONGO_URI")
 DATABASE_NAME = "ecommerce_db"  # Replace with your desired database name
 COLLECTION_NAME = "sales" # Replace with your desired collection name
 
